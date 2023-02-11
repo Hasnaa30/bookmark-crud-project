@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styling.css">
+</head>
+<body>
+    <div class="container pt-3">
+        <div class="text">
+            <h1 id="demo1" class="my-5 ms-3 fw-bold fs-2"></h1>
+        </div>
+        <div class="info pb-3">
+            <div class="content text-center my-3 py-4 mx-3">
+                <h2 id="demo2" class="fs-4 fw-bold mt-2"></h2>
+                <label for="siteName" class="mt-4 mb-3 fw-bold">Site Name</label>
+                <input type="text" id="siteName" class="form-control mx-auto rounded-1" placeholder="Bookmark Name" required>
+                <label for="SiteURL" class="my-3 fw-bold">Site URL</label>
+                <input type="url" id="SiteURL" class="form-control mx-auto rounded-1" placeholder="Website URL" required>
+                <button onclick="addBookmark()" type="submit" class="btn text-white mt-3 mb-4 mx-auto text-white">Submit</button> 
+            </div>
+            <div id="bookBox"></div>
+        </div>
+        <div class="footer mt-4 ps-3">
+            <p id="demo3" class="fw-bold pt-1"></p>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
